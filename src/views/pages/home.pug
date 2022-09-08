@@ -1,0 +1,23 @@
+extends ../layouts/master.pug
+
+block title
+  title Главная
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Contact page
+  section.sentence
+      .row.g-0
+        .col
+          img(src=require("images/home/slide-01.png")).sentence__img.for-pc
+          img(src=require("images/home/slide-01m.jpg")).sentence__img.for-mobile
+

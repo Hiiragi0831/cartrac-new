@@ -1,0 +1,11 @@
+.for-pc {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.for-mobile {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}

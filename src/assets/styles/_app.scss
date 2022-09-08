@@ -1,4 +1,5 @@
-@import 'normalize.css';
+@import 'bootstrap';
+@import 'swiper/swiper-bundle.css';
 
 /*
   Base
@@ -8,10 +9,10 @@
 /*
   Utils
 */
-@import './utils/dimensions';
 @import './utils/mixins';
-@import './utils/colors';
 @import './utils/keyframes';
+@import './utils/variables';
+@import './utils/helps';
 
 /*
   Components
@@ -19,7 +20,9 @@
 @import './components/footer';
 @import './components/button';
 @import './components/link';
-@import './components/_menu';
+@import './components/menu';
+@import './components/slider';
+@import './components/sentence';
 
 /*
   Layout
@@ -31,5 +34,3 @@
   Pages
 */
 @import './pages/index';
-@import './pages/blog';
-@import './pages/contact';
