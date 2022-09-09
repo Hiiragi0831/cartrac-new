@@ -1,2 +1,23 @@
 /* src/assets/styles/layout/_page.scss  */
 
+.popular-category {
+  margin-top: 70px;
+  .category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-template-areas:
+    "one . ."
+    "one . .";
+  }
+  .category__item {
+    &:first-child {
+      grid-area: one;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}

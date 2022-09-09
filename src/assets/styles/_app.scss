@@ -1,4 +1,4 @@
-@import 'bootstrap';
+@import 'bootstrap/scss/bootstrap';
 @import 'swiper/swiper-bundle.css';
 
 /*
@@ -9,9 +9,9 @@
 /*
   Utils
 */
+@import './utils/variables';
 @import './utils/mixins';
 @import './utils/keyframes';
-@import './utils/variables';
 @import './utils/helps';
 
 /*
@@ -23,6 +23,7 @@
 @import './components/menu';
 @import './components/slider';
 @import './components/sentence';
+@import './components/category';
 
 /*
   Layout
