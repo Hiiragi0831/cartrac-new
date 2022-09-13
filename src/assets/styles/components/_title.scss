@@ -1,0 +1,23 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  h2, .h2 {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      flex-shrink: 0;
+      content: "";
+      display: inline-flex;
+      margin-right: 14px;
+      background-image: url("@~images/icons/gear.png");
+      background-repeat: no-repeat;
+      background-size: 47px;
+      width: 47px;
+      height: 47px;
+    }
+  }
+}

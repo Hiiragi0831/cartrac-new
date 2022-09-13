@@ -1,2 +1,9 @@
 /* src/assets/styles/components/_link.scss  */
 
+.link {
+  color: $color-orange;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
