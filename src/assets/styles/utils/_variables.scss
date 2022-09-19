@@ -2,8 +2,12 @@
 $color-white: #fff;
 $color-black: #000;
 $color-dark: #181818;
+$color-gray: #D1D1D1;
 $color-orange: #F8991D;
 $color-orange-dark: #E06810;
 
 // fonts
 $font-gilroy: 'Gilroy';
+
+$transition-color:  color ease-in-out 0.15s;
+$box-shadow: 0 4px 13px rgba($color-black, 0.15);

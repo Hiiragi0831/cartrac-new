@@ -1,6 +1,72 @@
-import Swiper, { Lazy } from "swiper";
+import Swiper, { Pagination } from "swiper";
 
-let mainSlider = new Swiper('.slider__main', {
-  modules: [Lazy],
-  lazy: true,
+new Swiper('.home-tovars__slider .swiper', {
+  modules: [Pagination],
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+
+    1199: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    }
+  }
+});
+
+new Swiper('.home-brands__slider .swiper', {
+  modules: [Pagination],
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+
+    1199: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    }
+  }
 });

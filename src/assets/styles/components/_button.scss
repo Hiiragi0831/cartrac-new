@@ -3,18 +3,31 @@
 .btn {
   border-radius: 90px;
   padding: 14px 50px;
-  border: none;
-  outline: none;
-  box-shadow: none;
 
   &-primary {
     background-color: $color-orange;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
+    color: $color-white;
+    border-color: $color-orange;
+    outline-color: $color-orange;
 
-    &:hover {
-      background-color: $color-orange-dark !important;
+    &:hover, &:first-child:hover {
+      outline-color: $color-dark;
+      background-color: $color-dark;
+      border-color: $color-dark;
+    }
+  }
+
+  &-outline-primary {
+    border-color: $color-orange;
+    color: $color-orange;
+
+    &:hover, &:first-child:hover {
+      color: $color-white;
+      background-color: $color-orange;
+      border-color: $color-orange;
     }
   }
 }

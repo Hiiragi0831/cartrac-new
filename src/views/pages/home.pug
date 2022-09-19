@@ -15,19 +15,18 @@ block manifestBrowserconfigFiles
 block content
 
   //- Contact page
-  section.sentence
+  section.home-sentence
       .row.g-0
         .col
-          img(src=require("images/home/slide-01.png")).sentence__img.for-pc
-          img(src=require("images/home/slide-01m.jpg")).sentence__img.for-mobile
+          img(src=require("images/home/slide-01.png")).home-sentence__img.for-desktop
+          img(src=require("images/home/slide-01m.jpg")).home-sentence__img.for-mobile
 
-  section.popular-category
+  section.home-popular
     .container
       .row
-        .col-12
-          .title
-            h2 Популярные категории
-            a.link(href="#") Все категории
+        .title
+          h2 Популярные категории
+          a.link(href="#") Все категории
         .category
           .category__item
             img(src=require("images/category/cat-01.png")).category__img
@@ -74,17 +73,92 @@ block content
                 p 376 товара
               .category__button
                 a(href="#").btn.btn-primary В каталог
-  section.tovars
+  section.home-tovars
     .container
       .row
-        .col-12
-          .title
-            h2 Новые поступления
-            a.link(href="#") Перейти в каталог
-  section.tovars
+        .title
+          h2 Новые поступления
+          a.link(href="#") Перейти в каталог
+      .row
+        .home-tovars__slider
+          .swiper
+            .swiper-wrapper
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+            .swiper-pagination
+
+  section.home-tovars
     .container
       .row
-        .col-12
-          .title
-            h2 Популярные товары
-            a.link(href="#") Перейти в каталог
+        .title
+          h2 Популярные товары
+          a.link(href="#") Перейти в каталог
+      .row
+        .home-tovars__slider
+          .swiper
+            .swiper-wrapper
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+              .swiper-slide
+                +tovar
+            .swiper-pagination
+  section.special
+    .special__gradient
+    .container
+      .row
+        .special__col
+          h3 Возникли проблемы с выбором?
+          p Закажите бесплатную консультацию
+          form.form.row.g-2
+            .col-auto
+              input.form-control(type="text" placeholder="Ваш номер телефона")
+            .col-auto
+              button.btn.btn-primary Заказать звонок
+  section.home-brands
+    .container
+      .row
+        .title
+          h2 Популярные бренды
+      .row
+        .home-brands__slider
+          .swiper
+            .swiper-wrapper
+              .swiper-slide
+                .brand
+                    img(src=require("images/brands/deestone.png"))
+              .swiper-slide
+                .brand
+                  img(src=require("images/brands/bkt.png"))
+              .swiper-slide
+                .brand
+                  img(src=require("images/brands/kenda.png"))
+              .swiper-slide
+                .brand
+                  img(src=require("images/brands/starco.png"))
+              .swiper-slide
+                .brand
+                  img(src=require("images/brands/windpower.png"))
+            .swiper-pagination
+  section.home-about

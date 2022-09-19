@@ -12,6 +12,7 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/keyframes';
+@import './utils/breakpoint';
 @import './utils/helps';
 
 /*
@@ -23,8 +24,11 @@
 @import './components/title';
 @import './components/menu';
 @import './components/slider';
-@import './components/sentence';
 @import './components/category';
+@import './components/tovar';
+@import './components/special';
+@import './components/form';
+@import './components/brand';
 
 /*
   Layout
@@ -36,3 +40,4 @@
   Pages
 */
 @import './pages/index';
+@import './pages/home';

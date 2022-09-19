@@ -1,11 +1,22 @@
-.for-pc {
-  @include media-breakpoint-down(md) {
-    display: none;
+.for-desktop {
+  @include mobile {
+    // stylelint-disable-next-line declaration-no-important
+    display: none !important;
   }
 }
 
 .for-mobile {
-  @include media-breakpoint-up(md) {
-    display: none;
+  @include desktop {
+    // stylelint-disable-next-line declaration-no-important
+    display: none !important;
   }
 }
+
+@function vw($value, $base: 1920) {
+  @return $value / $base * 100vw;
+}
+
+@function vmin($value, $base: 360) {
+  @return $value / $base * 100vmin;
+}
+

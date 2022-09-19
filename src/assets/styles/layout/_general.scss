@@ -29,7 +29,7 @@ main {
 }
 
 section {
-  margin: 35px 0;
+  margin: 70px 0;
 }
 
 
@@ -37,4 +37,13 @@ h2, .h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
+}
+
+.container {
+  max-width: 1200px;
+
+  @include mobile {
+    padding: 0 vmin(15);
+    max-width: none;
+  }
 }

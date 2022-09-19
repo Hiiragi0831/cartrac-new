@@ -1,0 +1,14 @@
+.brand {
+  position: relative;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  padding: 20px 30px;
+  height: 130px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+}
