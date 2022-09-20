@@ -13,7 +13,8 @@
     border-color: $color-orange;
     outline-color: $color-orange;
 
-    &:hover, &:first-child:hover {
+    :not(.btn-check) + &:hover,
+    &:first-child:hover {
       outline-color: $color-dark;
       background-color: $color-dark;
       border-color: $color-dark;
@@ -24,7 +25,8 @@
     border-color: $color-orange;
     color: $color-orange;
 
-    &:hover, &:first-child:hover {
+    :not(.btn-check) + &:hover,
+    &:first-child:hover {
       color: $color-white;
       background-color: $color-orange;
       border-color: $color-orange;

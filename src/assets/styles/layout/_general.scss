@@ -20,6 +20,32 @@ html, body {
 
 main {
   flex: 1;
+  padding-top: 238px;
+
+  @include mobile {
+    padding-top: 94px;
+  }
+}
+
+hr {
+  border-color: $color-gray;
+  opacity: 0.5;
+}
+
+.bg-overflow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: $color-black;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility $transition, opacity $transition;
+
+  &.is-active {
+    opacity: 0.7;
+    visibility: visible;
+  }
 }
 
 .site {

@@ -161,7 +161,6 @@ block content
                 a.brand(href="#")
                   img(src=require("images/brands/windpower.png"))
             .swiper-pagination
-  section.home__map
   section.home__about
     .container
       .row
@@ -182,3 +181,43 @@ block content
               img(src=require("images/home/about-2.jpg"))
             .home__about-image.home__about-image--2
               img(src=require("images/home/about-1.jpg"))
+  section.map-box.home__map
+    .map-box__title
+      .container
+        .row
+          .col-12.col-lg-6
+            .title
+              h2 Наши контакты
+    .map-box__map
+      iframe(src='https://yandex.ru/map-widget/v1/-/CCUV6NWgsA' width='100%' height='100%' allowfullscreen='true')
+      .container
+        .row
+          .map-box__box
+            .map-box__item
+              .map-box__icon
+                img(src=require("images/icons/warehouse.svg"))
+              .map-box__text
+                p.map-box__subtitle Центральный офис и склад
+                p.map-box__title 196240, город Санкт-Петербург, Кубинская улица, дом 75к1
+            .map-box__item
+              .map-box__icon
+                img(src=require("images/icons/warehouse.svg"))
+              .map-box__text
+                p.map-box__subtitle Сотрудничество
+                a.map-box__title.link(href="mailto:info@cartrac.ru") info@cartrac.ru
+            .map-box__item
+              .map-box__icon
+                img(src=require("images/icons/warehouse.svg"))
+              .map-box__text
+                p.map-box__subtitle Оставить заявку
+                a.map-box__title.link(href="tel:+78003501460") +7 (800) 350-14-60
+  section.special.m-0
+    .special__gradient
+    .container
+      .row
+        .special__col
+          h3 Следите за нами ВКонтакте
+          p Подпишись на нас в ВК и будь в курсе последних новостей компании
+          a.btn.btn-primary(href="https://vk.com/cartrac" target="_blank") @cartrac
+
+

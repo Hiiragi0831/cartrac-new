@@ -1,2 +1,87 @@
-header
-  p header
+header.header#header(data-fix-block)
+  .header__head
+    .container
+      .row
+        .header__head-box
+          .header__social
+            a.header__social-item(href="#")
+              img(src=require("images/icons/icon-vk.svg"))
+            a.header__social-item(href="#")
+              img(src=require("images/icons/icon-telegram.svg"))
+            a.header__social-item(href="#")
+              img(src=require("images/icons/icon-whatsapp.svg"))
+          .header__liks
+            a.header__liks-item(href="#")
+              .header__liks-icon
+                img(src=require("images/icons/icon-pnone.svg"))
+              .header__liks-text Заказать звонок
+  hr
+  .header__body
+    .container
+      .row
+        .header__body-box
+          .header__burger
+            img(src=require("images/icons/burger.svg"))
+          .header__logo
+            img(src=require("images/logo.svg"))
+          a.header__phone(href="#")
+            img(src=require("images/icons/icon-pnone.svg"))
+          .header__search
+            form.form
+              input(type="text" placeholder="Поиск товара")
+          .contact-box
+            .contact-box__item
+              a(href="mailto:zakaz@cartrac.ru").contact-box__link
+                img(src=require("images/icons/icon-email.svg")).contact-box__icon
+                | zakaz@cartrac.ru
+              a(href="mailto:zakaz@cartrac.ru").link.contact-box__write Написать нам
+            .contact-box__item
+              a(href="tel:+78003501460").contact-box__link
+                img(src=require("images/icons/icon-pnone.svg")).contact-box__icon
+                | +7 (800) 350-14-60
+              p c 10.00 до 22.00
+  .header__menu
+    .container
+      .row
+        .header__nav
+          a.header__nav-item(href="#") Главная
+          a.header__nav-item(href="#") О компании
+          a.header__nav-item(href="#") Каталог товаров
+          a.header__nav-item(href="#") Бренды
+          a.header__nav-item(href="#") Поставщикам
+          a.header__nav-item(href="#") Контакты
+
+.header__mobile
+  .header__mobile-box
+    .header__mobile-close
+      img(src=require("images/icons/close.svg"))
+
+    .header__search
+      form.form
+        input(type="text" placeholder="Поиск товара")
+    .header__nav
+      a.header__nav-item(href="#") Главная
+      a.header__nav-item(href="#") О компании
+      a.header__nav-item(href="#") Каталог товаров
+      a.header__nav-item(href="#") Бренды
+      a.header__nav-item(href="#") Поставщикам
+      a.header__nav-item(href="#") Контакты
+    .contact-box
+      .contact-box__item
+        a(href="mailto:zakaz@cartrac.ru").contact-box__link
+          img(src=require("images/icons/icon-email.svg")).contact-box__icon
+          | zakaz@cartrac.ru
+        a(href="mailto:zakaz@cartrac.ru").link.contact-box__write Написать нам
+      .contact-box__item
+        a(href="tel:+78003501460").contact-box__link
+          img(src=require("images/icons/icon-pnone.svg")).contact-box__icon
+          | +7 (800) 350-14-60
+        p c 10.00 до 22.00
+    .header__social
+      a.header__social-item(href="#")
+        img(src=require("images/icons/icon-vk.svg"))
+      a.header__social-item(href="#")
+        img(src=require("images/icons/icon-telegram.svg"))
+      a.header__social-item(href="#")
+        img(src=require("images/icons/icon-whatsapp.svg"))
+
