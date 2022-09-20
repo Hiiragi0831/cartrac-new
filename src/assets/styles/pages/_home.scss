@@ -1,16 +1,16 @@
 .home {
-  &-sentence {
+  &__sentence {
     position: relative;
     width: 100%;
     margin: 0;
 
-    &__img {
+    &-img {
       width: 100%;
       height: auto;
     }
   }
 
-  &-popular {
+  &__popular {
     .category {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -27,7 +27,7 @@
       }
     }
 
-    &__title {
+    &-title {
       margin-bottom: 30px;
       display: flex;
       justify-content: space-between;
@@ -42,8 +42,8 @@
     }
   }
 
-  &-tovars, &-brands {
-    &__slider {
+  &__tovars, &__brands {
+    &-slider {
       .swiper {
         padding: 40px 15px;
         margin-left: -15px;
@@ -61,6 +61,31 @@
             }
           }
         }
+      }
+    }
+  }
+
+  &__about {
+    position: relative;
+
+    &-images {
+      position: relative;
+    }
+
+    &-image {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
+
+      &--2 {
+        position: absolute;
+        left: -20px;
+        bottom: -20px;
+        width: 350px;
       }
     }
   }

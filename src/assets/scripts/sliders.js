@@ -1,6 +1,6 @@
 import Swiper, { Pagination } from "swiper";
 
-new Swiper('.home-tovars__slider .swiper', {
+new Swiper('.home__tovars-slider .swiper', {
   modules: [Pagination],
   slidesPerView: 1,
   spaceBetween: 30,
@@ -35,7 +35,7 @@ new Swiper('.home-tovars__slider .swiper', {
   }
 });
 
-new Swiper('.home-brands__slider .swiper', {
+new Swiper('.home__brands-slider .swiper', {
   modules: [Pagination],
   slidesPerView: 1,
   spaceBetween: 30,

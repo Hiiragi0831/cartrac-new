@@ -18,22 +18,30 @@
     display: flex;
     justify-content: center;
     margin-bottom: 22px;
+    opacity: 1;
+    transition: opacity $transition;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     img {
-      width: auto;
-      height: 100%;
       object-fit: contain;
     }
   }
 
   &__title {
     margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-black;
+    text-decoration: none;
+    transition: $transition-color;
 
-    p {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
-      text-align: center;
+    &:hover {
+      color: $color-orange;
     }
   }
 

@@ -15,13 +15,13 @@ block manifestBrowserconfigFiles
 block content
 
   //- Contact page
-  section.home-sentence
+  section.home__sentence
       .row.g-0
         .col
-          img(src=require("images/home/slide-01.png")).home-sentence__img.for-desktop
-          img(src=require("images/home/slide-01m.jpg")).home-sentence__img.for-mobile
+          img(src=require("images/home/slide-01.png")).home__sentence-img.for-desktop
+          img(src=require("images/home/slide-01m.jpg")).home__sentence-img.for-mobile
 
-  section.home-popular
+  section.home__popular
     .container
       .row
         .title
@@ -73,14 +73,14 @@ block content
                 p 376 товара
               .category__button
                 a(href="#").btn.btn-primary В каталог
-  section.home-tovars
+  section.home__tovars
     .container
       .row
         .title
           h2 Новые поступления
           a.link(href="#") Перейти в каталог
       .row
-        .home-tovars__slider
+        .home__tovars-slider
           .swiper
             .swiper-wrapper
               .swiper-slide
@@ -99,14 +99,14 @@ block content
                 +tovar
             .swiper-pagination
 
-  section.home-tovars
+  section.home__tovars
     .container
       .row
         .title
           h2 Популярные товары
           a.link(href="#") Перейти в каталог
       .row
-        .home-tovars__slider
+        .home__tovars-slider
           .swiper
             .swiper-wrapper
               .swiper-slide
@@ -136,29 +136,49 @@ block content
               input.form-control(type="text" placeholder="Ваш номер телефона")
             .col-auto
               button.btn.btn-primary Заказать звонок
-  section.home-brands
+  section.home__brands
     .container
       .row
         .title
           h2 Популярные бренды
       .row
-        .home-brands__slider
+        .home__brands-slider
           .swiper
             .swiper-wrapper
               .swiper-slide
-                .brand
+                a.brand(href="#")
                     img(src=require("images/brands/deestone.png"))
               .swiper-slide
-                .brand
+                a.brand(href="#")
                   img(src=require("images/brands/bkt.png"))
               .swiper-slide
-                .brand
+                a.brand(href="#")
                   img(src=require("images/brands/kenda.png"))
               .swiper-slide
-                .brand
+                a.brand(href="#")
                   img(src=require("images/brands/starco.png"))
               .swiper-slide
-                .brand
+                a.brand(href="#")
                   img(src=require("images/brands/windpower.png"))
             .swiper-pagination
-  section.home-about
+  section.home__map
+  section.home__about
+    .container
+      .row
+        .col-12.col-lg-6
+          .title
+            h2 О нашем магазине
+          p
+            | Магазин шин для спецтехники “КАРТРАК” предлагает широкий ассортимент продукции от мировых производителей. Особенность нашей компании заключается в предоставлении лучших брендов, которые пользуются спросом и успели зарекомендовать себя среди пользователей.
+          p
+            | В наличии шины для спецтехники следующих производителей: BKT, KENDA, DEESTONE, STARCO. Такой выбор обусловлен распространенностью этих марок, которые используются практически во всех отраслях, начиная от строительства и заканчивая сельскохозяйственной деятельностью.
+          p
+            | Пневматические шины, также как и другие типы, предлагаются по выгодной стоимости. Кроме этого, с нашей стороны гарантируется наличие товара на складе - оформить заявку можно в удобное время и подходящим способом (телефон, электронная почта, онлайн-чат).
+          p
+            | Продажа шин для спецтехники выполняется с предоставлением гарантии на всю продукцию. Сертификаты качества также выдаются - одно из правил нашего магазина. Получить консультацию относительно ассортимента можно в любое время.
+        .col-12.col-lg-6
+          .home__about-images
+            .home__about-image.home__about-image--1
+              img(src=require("images/home/about-2.jpg"))
+            .home__about-image.home__about-image--2
+              img(src=require("images/home/about-1.jpg"))

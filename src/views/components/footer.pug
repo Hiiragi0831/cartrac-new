@@ -1,2 +1,53 @@
-footer
-  p footer
+footer.footer
+  .footer__body
+    .container
+      .row
+        .col-12.col-lg-6.col-xl-3
+          .footer__logo
+            img(src=require("images/logo-white.svg"))
+          .footer__social
+            p Социальные сети
+            .footer__social__box
+              a(href="#")
+                img(src=require("images/icons/icon-vk.svg"))
+              a(href="#")
+                img(src=require("images/icons/icon-telegram.svg"))
+              a(href="#")
+                img(src=require("images/icons/icon-whatsapp.svg"))
+        .col-12.col-lg-6.col-xl-3
+          p.footer__head Навигация
+          .footer__links
+            a.footer__link(href="#") Главная
+            a.footer__link(href="#") Главная
+            a.footer__link(href="#") Главная
+            a.footer__link(href="#") Главная
+            a.footer__link(href="#") Главная
+        .col-12.col-lg-6.col-xl-3
+          p.footer__head Категории
+          .footer__links
+            a.footer__link(href="#") Шины для карьерного погрузчика
+            a.footer__link(href="#") Шины для карьерног самосвала
+            a.footer__link(href="#") Шины для карьерного погрузчика
+            a.footer__link(href="#") Шины для карьерного погрузчика
+            a.footer__link(href="#") Шины для карьерног самосвала
+          a(href="#").link.footer__link.footer__link-all Все категории
+        .col-12.col-lg-6.col-xl-3
+          p.footer__head Контакты
+          .contact-box
+            .contact-box__item
+              a(href="mailto:zakaz@cartrac.ru").contact-box__link
+                img(src=require("images/icons/icon-email.svg")).contact-box__icon
+                | zakaz@cartrac.ru
+              a(href="mailto:zakaz@cartrac.ru").link.contact-box__write Написать нам
+            .contact-box__item
+              a(href="tel:+78003501460").contact-box__link
+                img(src=require("images/icons/icon-pnone.svg")).contact-box__icon
+                | +7 (800) 350-14-60
+              p c 10.00 до 22.00
+  .footer__copy
+    .container
+      .row
+        .col-12
+          .footer__copy-text
+            p 2022 - ООО «КАРТРАК»
+            a.link(href="#") Разработано в Weblark
