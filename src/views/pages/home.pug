@@ -14,7 +14,6 @@ block manifestBrowserconfigFiles
 
 block content
 
-  //- Contact page
   section.home__sentence
       .row.g-0
         .col
@@ -221,3 +220,20 @@ block content
           a.btn.btn-primary(href="https://vk.com/cartrac" target="_blank") @cartrac
 
 
+  section.my-3
+    .container
+      .row
+        .crumbs
+          a.crumbs__item(href="#") Главная
+          a.crumbs__item(href="#") Хлебные крошки
+  section.catalog.mt-0
+    .container
+      .row
+        .col-12
+          .title
+            h2 Каталог
+        .col-12.col-lg-3
+          .catalog__filters
+          p Фильтры
+        .col-12.col-lg-9
+          +tovar.tovar__line

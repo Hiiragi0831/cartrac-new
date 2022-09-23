@@ -1,4 +1,6 @@
 .tovar {
+  $p: &;
+
   position: relative;
   padding: 25px;
   box-shadow: $box-shadow;
@@ -59,4 +61,36 @@
     margin-top: auto;
   }
 
+  &__line {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 40px;
+
+    #{$p}__title,
+    #{$p}__price,
+    #{$p}__button,
+    #{$p}__image, {
+      margin: 0;
+    }
+
+    #{$p}__image {
+      height: 60px;
+      width: 60px;
+    }
+
+    #{$p}__price {
+      flex-shrink: 0;
+
+      p {
+        font-weight: 500;
+      }
+    }
+
+    #{$p}__title {
+      width: 255px;
+      text-align: left;
+      font-weight: 400;
+    }
+  }
 }

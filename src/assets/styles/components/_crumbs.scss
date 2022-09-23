@@ -1,0 +1,35 @@
+.crumbs {
+  display: flex;
+
+  &__item {
+    color: $color-orange;
+    transition: $transition-color;
+
+    &:hover {
+      color: $color-dark;
+    }
+
+    &:before {
+      height: 9px;
+      width: 9px;
+      margin: 0 10px;
+      display: inline-flex;
+      content: "";
+      background-image: url("@~images/icons/down-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      color: $color-dark;
+      text-decoration: none;
+    }
+  }
+}

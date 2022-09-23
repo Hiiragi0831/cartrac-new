@@ -25,7 +25,8 @@
     display: flex;
     gap: 16px;
 
-    &-item {
+    a {
+      display: block;
       width: 24px;
       height: 24px;
     }
