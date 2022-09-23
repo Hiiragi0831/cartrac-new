@@ -109,7 +109,16 @@ block content
           .swiper
             .swiper-wrapper
               .swiper-slide
-                +tovar
+                .tovar
+                  a.tovar__image(href="#")
+                    img(src=require("images/tovar/tovar-01.png"))
+                  a.tovar__title(href="#")
+                    p Шина пне вматическ япнев матическаяпне вматическая  13.6-38 8PR BKT TR 135 131A6/127A8 TT
+                  .tovar__price
+                    p 2 500 ₽
+                  .tovar__button
+                    a.btn.btn-outline-primary(href="#") Подробнее
+
               .swiper-slide
                 +tovar
               .swiper-slide

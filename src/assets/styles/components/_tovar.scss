@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 
   p {
     margin: 0;
@@ -64,6 +65,7 @@
   &__line {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 15px;
     gap: 40px;
 
@@ -81,6 +83,8 @@
 
     #{$p}__price {
       flex-shrink: 0;
+      text-align: center;
+      width: 135px;
 
       p {
         font-weight: 500;
@@ -91,6 +95,16 @@
       width: 255px;
       text-align: left;
       font-weight: 400;
+    }
+
+    @include mobile {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      #{$p}__title {
+        text-align: center;
+      }
     }
   }
 }
