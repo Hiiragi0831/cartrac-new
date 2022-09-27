@@ -97,7 +97,7 @@ module.exports = (env) => {
           test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
           type: 'asset/resource',
           generator: {
-            filename: 'assets/images/[name][ext]'
+            filename: '[path][name][ext]'
           }
         },
         {

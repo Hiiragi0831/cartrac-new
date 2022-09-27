@@ -50,6 +50,7 @@
 
   &__price {
     margin-bottom: 15px;
+    text-align: center;
 
     p {
       font-weight: 600;
@@ -67,7 +68,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    gap: 40px;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-gray;
 
     #{$p}__title,
     #{$p}__price,
@@ -88,11 +92,13 @@
 
       p {
         font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
       }
     }
 
     #{$p}__title {
-      width: 255px;
+      width: 263px;
       text-align: left;
       font-weight: 400;
     }
