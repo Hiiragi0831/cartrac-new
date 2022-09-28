@@ -67,7 +67,6 @@
 }
 
 .product {
-
   h1 {
     margin-bottom: 20px;
     font-weight: 500;
@@ -107,7 +106,10 @@
   &__block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    .btn {
+      margin: auto 0;
+    }
   }
 
   &__image,
@@ -137,6 +139,7 @@
   &__image {
     grid-area: image;
     justify-content: center;
+    align-items: center;
 
     &-box {
       width: 100%;
@@ -216,5 +219,16 @@
       text-align: right;
       opacity: 0.6;
     }
+  }
+}
+
+.category-page {
+  .category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    grid-template-areas:
+    ". . .";
   }
 }
