@@ -136,6 +136,26 @@
     margin-bottom: 10px;
   }
 
+  &__pay {
+    display: flex;
+    gap: 14px;
+
+    img {
+      flex-shrink: 0;
+      object-fit: contain;
+      width: 156px;
+    }
+
+    &-deck {
+      font-family: $font-gilroy;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      opacity: 0.5;
+      margin: 0;
+    }
+  }
+
   &__image {
     grid-area: image;
     justify-content: center;
@@ -177,6 +197,12 @@
   &__price {
     grid-area: price;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    .product__block {
+      flex: 0 0 auto;
+      width: 50%;
+    }
   }
 
   &__offer {
@@ -230,5 +256,10 @@
     gap: 15px;
     grid-template-areas:
     ". . .";
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

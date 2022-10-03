@@ -20,10 +20,10 @@ html, body {
 
 main {
   flex: 1;
-  padding-top: 238px;
+  padding-top: 212px;
 
   @include mobile {
-    padding-top: 94px;
+    padding-top: 69px;
   }
 }
 
