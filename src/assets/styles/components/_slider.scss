@@ -23,3 +23,26 @@
     }
   }
 }
+
+.tovars, .brands {
+  &-slider {
+    .swiper {
+      padding: 40px 15px;
+      margin-left: -15px;
+      margin-right: -15px;
+
+      &-pagination {
+        bottom: 0;
+
+        &-bullet {
+          height: 15px;
+          width: 15px;
+
+          &-active {
+            background-color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}

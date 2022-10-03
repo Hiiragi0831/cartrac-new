@@ -32,7 +32,7 @@ module.exports = (env) => {
     output: {
       publicPath: ASSET_PATH,
       path: path.join(__dirname, '../dist'),
-      filename: 'assets/js/[name].[contenthash:7].bundle.js'
+      filename: 'assets/js/[name].bundle.js'
     },
     devServer: {
       contentBase: path.join(__dirname, '../src'),
@@ -133,7 +133,7 @@ module.exports = (env) => {
           vendors: false,
           // vendor chunk
           vendor: {
-            filename: 'assets/js/vendor.[chunkhash:7].bundle.js',
+            filename: 'assets/js/vendor.bundle.js',
             // sync + async chunks
             chunks: 'all',
             // import file path containing node_modules
@@ -154,7 +154,7 @@ module.exports = (env) => {
         ]
       }),
       new MiniCssExtractPlugin({
-        filename: 'assets/css/[name].[chunkhash:7].bundle.css',
+        filename: 'assets/css/[name].bundle.css',
         chunkFilename: '[id].css',
       }),
 

@@ -1,7 +1,7 @@
 import Swiper, { Pagination } from "swiper";
 
 const init = () => {
-  new Swiper('.home__tovars-slider .swiper', {
+  new Swiper('.tovars-slider .swiper', {
     modules: [Pagination],
     slidesPerView: 1,
     spaceBetween: 30,
@@ -36,7 +36,7 @@ const init = () => {
     }
   });
 
-  new Swiper('.home__brands-slider .swiper', {
+  new Swiper('.brands-slider .swiper', {
     modules: [Pagination],
     slidesPerView: 1,
     spaceBetween: 30,
