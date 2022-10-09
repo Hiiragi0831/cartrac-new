@@ -1,0 +1,43 @@
+.feature-box {
+  margin-top: 35px;
+  margin-bottom: 25px;
+
+  @include desktop {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  &__band {
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url("@~images/icons/handshake.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  &__desc {
+    p {
+      margin: 0;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 15px;
+
+      @include desktop {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

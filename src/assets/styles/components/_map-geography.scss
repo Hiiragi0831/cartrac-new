@@ -1,0 +1,53 @@
+.map-geography {
+  position: relative;
+
+  &__inner {
+    height: 550px;
+  }
+
+  &__zoom-message {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &.active {
+      display: flex;
+    }
+
+    span {
+      text-align: center;
+    }
+  }
+}
+
+.map-balloon {
+  padding: 20px 35px;
+  width: 360px;
+
+  &__title {
+    font-weight: 500;
+  }
+}
+
+.popover {
+  width: max-content;
+  height: auto;
+  position: absolute;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg) translate3d(0, -50%, 0);
+    background-color: #fff;
+  }
+}

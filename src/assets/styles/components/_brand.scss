@@ -20,4 +20,17 @@
     opacity: 1;
     transition: opacity $transition;
   }
+
+  &--greay {
+    filter: grayscale(1);
+    transition: filter $transition;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+  }
 }

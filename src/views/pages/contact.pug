@@ -16,4 +16,49 @@ block content
 
   //- Contact page
   section.page.contact__page
-    h1.page__title # Contact page
+    .container
+      .title
+        h2!= "Контакты"
+
+      .row.justify-content-between
+        .col-12.col-lg-auto.contact-band
+          .contact-band__icon.contact-band__icon--address
+            .contact-band__headline!= "Адрес:"
+            .contact-band__desc!= "Санкт-Петербург, Кубинская улица, дом 75к1"
+        .col-12.col-lg-auto.contact-band
+          .contact-band__icon.contact-band__icon--tel
+            .contact-band__headline!= "Телефон:"
+            a.contact-band__link.link(href="tel:+78003501460")!= "+7 (800) 350-14-60"
+        .col-12.col-lg-auto.contact-band
+          .contact-band__icon.contact-band__icon--mailto
+            .contact-band__headline!= "Почта:"
+            a.contact-band__link.link(href="mailto:zakaz@cartrac.ru")!= "zakaz@cartrac.ru"
+
+      .title
+        h2!= "Наши склады"
+      .row.justify-content-between
+        .col-12.col-sm-6.col-lg-auto
+          .map-control.map-control__icon
+            h3.map-control__headline!= "Санкт-Петербург"
+            a.map-control__link.link#pin-0(href="#")!= "Показать на карте"
+        .col-12.col-sm-6.col-lg-auto
+          .map-control.map-control__icon
+            h3.map-control__headline!= "Москва"
+            a.map-control__link.link#pin-1(href="#")!= "Показать на карте"
+        .col-12.col-sm-6.col-lg-auto
+          .map-control.map-control__icon
+            h3.map-control__headline!= "Ростов-на-Дону"
+            a.map-control__link.link#pin-2(href="#")!= "Показать на карте"
+        .col-12.col-sm-6.col-lg-auto
+          .map-control.map-control__icon
+            h3.map-control__headline!= "Екатеринбург"
+            a.map-control__link.link#pin-3(href="#")!= "Показать на карте"
+        .col-12.col-sm-6.col-lg-auto
+          .map-control.map-control__icon
+            h3.map-control__headline!= "Челябинск"
+            a.map-control__link.link#pin-4(href="#")!= "Показать на карте"
+      +map-geography('assets/data/geography-map.json')
+
+block scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a01f8dd2-d0ce-4dd5-a1b6-745f3a207777")
+

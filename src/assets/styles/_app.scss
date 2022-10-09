@@ -1,47 +1,56 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'swiper/swiper-bundle.css';
+@import "bootstrap/scss/bootstrap";
+@import "swiper/swiper-bundle.css";
 
 /*
   Base
 */
-@import './base/fonts';
+@import "./base/fonts";
 
 /*
   Utils
 */
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/keyframes';
-@import './utils/breakpoint';
-@import './utils/helps';
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+@import "./utils/breakpoint";
+@import "./utils/helps";
 
 /*
   Components
 */
-@import './components/header';
-@import './components/footer';
-@import './components/button';
-@import './components/link';
-@import './components/title';
-@import './components/menu';
-@import './components/slider';
-@import './components/category';
-@import './components/tovar';
-@import './components/special';
-@import './components/form';
-@import './components/brand';
-@import './components/contact-box';
-@import './components/map-box';
-@import './components/crumbs';
-@import './components/catalog';
+@import "./components/header";
+@import "./components/footer";
+
+@import "./components/button";
+@import "./components/link";
+@import "./components/title";
+@import "./components/menu";
+@import "./components/slider";
+@import "./components/category";
+@import "./components/tovar";
+@import "./components/special";
+@import "./components/form";
+@import "./components/brand";
+@import "./components/map-control";
+@import "./components/contact-box";
+@import "./components/contact-band";
+@import "./components/map";
+@import "./components/map-box";
+@import "./components/map-geography";
+@import "./components/about-us";
+@import "./components/provider-box";
+@import "./components/feature-box";
+@import "./components/swiper-brands";
+@import "./components/crumbs";
+@import "./components/catalog";
 
 /*
   Layout
 */
-@import './layout/page';
-@import './layout/general';
+@import "./layout/page";
+@import "./layout/general";
 
 /*
   Pages
 */
-@import './pages/home';
+@import "./pages/home";

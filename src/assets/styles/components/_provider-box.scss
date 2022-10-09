@@ -1,0 +1,40 @@
+.provider-box {
+  font-size: 16px;
+
+  @include desktop {
+    font-size: 22px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 15px;
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image {
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include tablet {
+      margin-top: 0;
+      border-radius: 12px;
+    }
+
+    @include desktop {
+      border-radius: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
