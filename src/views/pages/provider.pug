@@ -1,0 +1,89 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Contact page
+  section.page
+    .provider-box
+      .container
+        .row
+          .col-12.col-md-6
+            .title
+              h2!= "Поставщикам"
+            p!= "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti  mollitia animi, id est laborum et dolorum fuga."
+            p!= "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+          .col-12.col-md-5.offset-md-1
+            .provider-box__image
+              img(src=require("images/home/about-2.jpg"))
+
+    .feature-box
+      .container
+        .title
+          h2!= "Почему с нами выгодно работать"
+        .row
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          .col-12.col-sm-6.col-lg-4
+            .feature-box__band
+              .feature-box__icon
+              .feature-box__desc
+                p!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+
+    .swiper-brands
+      .container
+        .title
+          h2!= "Мы поставляем"
+        .swiper-brands-slider
+          .swiper.swiper-brands__swiper
+            .swiper-wrapper
+              .swiper-slide
+                a.brand.brand--greay(href="#")
+                  img(src=require("images/brands/deestone.png"))
+              .swiper-slide
+                a.brand.brand--greay(href="#")
+                  img(src=require("images/brands/bkt.png"))
+              .swiper-slide
+                a.brand.brand--greay(href="#")
+                  img(src=require("images/brands/kenda.png"))
+              .swiper-slide
+                a.brand.brand--greay(href="#")
+                  img(src=require("images/brands/starco.png"))
+              .swiper-slide
+                a.brand.brand--greay(href="#")
+                  img(src=require("images/brands/windpower.png"))
+            .swiper-pagination

@@ -1,0 +1,63 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Contact page
+  section.page
+    .container
+      .title
+        h2!= "О компании"
+
+      .row.align-items-center.about-us
+        .col-12.col-md-5
+          .about-us__image
+            img(src=require("images/about-us/1.jpg"))
+        .col-12.col-md-7
+          .about-us__box
+            h2!= "2016"
+            p!= "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti  mollitia animi, id est laborum et dolorum fuga."
+            p!= "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+
+      .row.flex-row-reverse.align-items-center.about-us
+        .col-12.col-md-5
+          .about-us__image
+            img(src=require("images/about-us/2.jpg"))
+        .col-12.col-md-7
+          .about-us__box
+            h2!= "2018"
+            p!= "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti  mollitia animi, id est laborum et dolorum fuga."
+            p!= "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+
+      .row.align-items-center.about-us
+        .col-12.col-md-5
+          .about-us__image
+            img(src=require("images/about-us/3.jpg"))
+        .col-12.col-md-7
+          .about-us__box
+            h2!= "2020"
+            p!= "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti  mollitia animi, id est laborum et dolorum fuga."
+            p!= "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+
+      .row.align-items-center.flex-row-reverse.about-us
+        .col-12.col-md-5
+          .about-us__image
+            img(src=require("images/about-us/4.jpg"))
+        .col-12.col-md-7
+          .about-us__box
+            h2!= "2022"
+            p!= "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti  mollitia animi, id est laborum et dolorum fuga."
+            p!= "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+
+
