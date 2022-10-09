@@ -32,4 +32,19 @@
       border-color: $color-orange;
     }
   }
+
+  &--reset {
+    margin: 20px;
+    padding: 10px 15px;
+    max-width: calc(100% - 40px);
+    width: 100%;
+    color: #898989;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+
+    &:hover,
+    &:focus {
+      border-color: #d0d0d0 !important;
+    }
+  }
 }
