@@ -1,0 +1,52 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Contact page
+  section.page
+    .container
+      .row
+        .col-12
+          .title
+            h2!= "Каталог"
+        .col-12.col-lg-3
+          .accordion(data-accordion="parent", data-single, data-close-inner)
+            .catalog__filters.filters
+              .filters__headline!= "Фильтры"
+              .filters__accordions
+                .accordion__element(data-accordion="element")
+                  button.accordion__button.btn.filters__accordion-button(type="button", data-accordion="button") Категория
+                  .accordion__content(data-accordion="content")
+                    .accordion__wrapper
+                      fieldset.filters__fieldset
+                        legend.filters__legend.visually-hidden!= 'Выберите категорию из списка'
+                        select.filters__select
+                          option(value='', selected, disabled)!= 'Выберите из списка'
+                          option(value='Mpt')!= 'Mpt'
+                          option(value='Scrapers')!= 'Scrapers'
+                          option(value='Грузовые шины')!= 'Грузовые шины'
+                          option(value='Легкогрузовые шины')!= 'Легкогрузовые шины'
+                          option(value='Пневматические шины для складских вилочных погрузчиков')!= 'Пневматические шины для складских вилочных погрузчиков'
+                          option(value='Шины для экскаваторов-погрузчиков / телескопических погрузчиков')!= 'Шины для экскаваторов-погрузчиков / телескопических погрузчиков'
+              button.btn.btn--reset(type="button") Сбросить фильтры
+        .col-12.col-lg-9
+          +tovar.tovar__line
+          +tovar.tovar__line
+          +tovar.tovar__line
+          +tovar.tovar__line
+
+block scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a01f8dd2-d0ce-4dd5-a1b6-745f3a207777")
+

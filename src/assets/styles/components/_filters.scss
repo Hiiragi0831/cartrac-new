@@ -1,0 +1,88 @@
+.filters {
+  font-weight: 500;
+  font-size: 18px;
+
+  &__headline {
+    position: relative;
+    padding: 20px 20px 20px 60px;
+    border-top: 1px solid #d0d0d0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("@~images/icons/setting-config.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+    }
+  }
+
+  &__fieldset {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__select {
+    max-width: 100%;
+    width: 100%;
+    height: 45px;
+    padding: 5px 40px 5px 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 5.25L7 8.75L10.5 5.25' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-position: center right 14px;
+    background-repeat: no-repeat;
+    background-size: auto 14px;
+    outline: none;
+  }
+
+  .accordion__element {
+    padding: 0;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+
+    .accordion__button {
+      position: relative;
+    }
+
+    .accordion__button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 5.25L7 8.75L10.5 5.25' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-size: 14px auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.is-active .accordion__button::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  .accordion__button {
+    padding: 20px;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+  }
+
+  .accordion__wrapper {
+    padding: 20px;
+  }
+}
