@@ -1,0 +1,96 @@
+$border-num-radius: 2px;
+
+.field-num {
+  $block-name: &; // #{$block-name}__element
+
+  display: block;
+  margin-bottom: 15px;
+
+  &__name {
+  }
+
+  &__input-wrap {
+    display: block;
+  }
+
+  &__input-and-btns {
+    display: block;
+    position: relative;
+    width: 155px;
+  }
+
+  &__input {
+    width: 155px;
+    height: 50px;
+    margin: 0;
+    padding: 0 40px;
+    text-align: center;
+    appearance: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 40px;
+    border: none;
+    padding: 0;
+    border-top-right-radius: $border-num-radius;
+    border-bottom-right-radius: $border-num-radius;
+    font: 0/0 a; // stylelint-disable-line
+    color: transparent;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      // background-color: $gray-lightest;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--plus {
+      right: 1px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 357 357'%3E%3Cpath d='M357 204H204v153h-51V204H0v-51h153V0h51v153h153v51z'/%3E%3C/svg%3E")
+        center no-repeat;
+      background-size: 14px 14px;
+    }
+
+    &--minus {
+      left: 1px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 357 357'%3E%3Cpath d='M357 204H0v-51h357v51z'/%3E%3C/svg%3E")
+        center no-repeat;
+      background-size: 14px 14px;
+    }
+
+    #{$block-name}--disabled & {
+      cursor: not-allowed;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__help-text {
+    // @include field-help-text;
+  }
+
+  &--error {
+    #{$block-name}__name,
+    #{$block-name}__input,
+    #{$block-name}__help-text {
+      color: #ff0000;
+    }
+
+    #{$block-name}__input {
+      border-color: #ff0000;
+      background-color: lighten(#ff0000, 35%);
+    }
+  }
+}

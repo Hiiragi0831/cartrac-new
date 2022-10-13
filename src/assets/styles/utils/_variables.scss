@@ -1,16 +1,17 @@
 // colors
 $color-white: #fff;
 $color-black: #000;
+$color-darken: #111;
 $color-dark: #181818;
-$color-gray: #D1D1D1;
-$color-gray-two: #7C7C7C;
-$color-orange: #F8991D;
-$color-orange-dark: #E06810;
+$color-gray: #d1d1d1;
+$color-gray-two: #7c7c7c;
+$color-orange: #f8991d;
+$color-orange-dark: #e06810;
 
 // fonts
-$font-gilroy: 'Gilroy';
+$font-gilroy: "Gilroy";
 
-$transition-color:  color ease-in-out 0.15s;
+$transition-color: color ease-in-out 0.15s;
 $transition: ease-in-out 0.15s;
 $box-shadow: 0 4px 13px rgba($color-black, 0.15);
 $border-radius: 10px;

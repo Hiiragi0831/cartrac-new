@@ -185,7 +185,6 @@ block content
                 +tovar
             .swiper-pagination
   section.special
-    .special__gradient
     .container
       .row
         .special__col
@@ -275,14 +274,13 @@ block content
               .map-box__text
                 p.map-box__subtitle Оставить заявку
                 a.map-box__title.link(href="tel:+78003501460") +7 (800) 350-14-60
-  section.special.m-0
-    .special__gradient
+  section.special.special--gradient.m-0
     .container
       .row
         .special__col
           h3 Следите за нами ВКонтакте
           p Подпишись на нас в ВК и будь в курсе последних новостей компании
-          a.btn.btn-primary(href="https://vk.com/cartrac" target="_blank") @cartrac
+          a.btn.btn-primary(href="https://vk.com/cartrac" target="_blank") Заказать звонок
 
 
   section.my-3
@@ -339,7 +337,17 @@ block content
                   img(src=require("images/pay.png"))
                   p.product__pay-deck Оплата картой и безнал с ндс 20%
               .product__block
-                a.btn.btn-primary Купить
+                +field-num({
+                  mods: '',
+                  val: '3',
+                  attrs: {
+                    name: 'quantity',
+                    max: '10',
+                    min: '1',
+                    step: '1',
+                  }
+                })
+                a.btn.btn-primary.btn--buy В корзину
             .product__offer
               p.product__subtitle Доставка и гарантия:
               p
