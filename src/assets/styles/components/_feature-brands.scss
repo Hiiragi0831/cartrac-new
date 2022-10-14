@@ -1,0 +1,36 @@
+.feature-brands {
+  margin-top: 35px;
+  margin-bottom: 15px;
+
+  @include desktop {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  &__band {
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+
+  &__count {
+    margin: 0 0 5px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1;
+    color: #f8991d;
+
+    @include desktop {
+      font-size: 64px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.15;
+
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+}

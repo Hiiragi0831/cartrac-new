@@ -13,6 +13,7 @@ window.sal = sal;
 
 // Styles
 import 'styles/_app.scss'
+import { initQty } from './assets/scripts/modules/field-num';
 // import 'simplebar/dist/simplebar.css';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -29,5 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     sliders.init();
     menu.init();
+    initQty();
   });
 });
