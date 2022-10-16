@@ -40,6 +40,34 @@ block content
                           option(value='Легкогрузовые шины')!= 'Легкогрузовые шины'
                           option(value='Пневматические шины для складских вилочных погрузчиков')!= 'Пневматические шины для складских вилочных погрузчиков'
                           option(value='Шины для экскаваторов-погрузчиков / телескопических погрузчиков')!= 'Шины для экскаваторов-погрузчиков / телескопических погрузчиков'
+                .accordion__element(data-accordion="element")
+                  button.accordion__button.btn.filters__accordion-button(type="button", data-accordion="button") Категория
+                  .accordion__content(data-accordion="content")
+                    .accordion__wrapper
+                      fieldset.filters__fieldset
+                        legend.filters__legend.visually-hidden!= 'Выберите категорию из списка'
+                        select.filters__select
+                          option(value='', selected, disabled)!= 'Выберите из списка'
+                          option(value='Mpt')!= 'Mpt'
+                          option(value='Scrapers')!= 'Scrapers'
+                          option(value='Грузовые шины')!= 'Грузовые шины'
+                          option(value='Легкогрузовые шины')!= 'Легкогрузовые шины'
+                          option(value='Пневматические шины для складских вилочных погрузчиков')!= 'Пневматические шины для складских вилочных погрузчиков'
+                          option(value='Шины для экскаваторов-погрузчиков / телескопических погрузчиков')!= 'Шины для экскаваторов-погрузчиков / телескопических погрузчиков'
+                .accordion__element(data-accordion="element")
+                  button.accordion__button.btn.filters__accordion-button(type="button", data-accordion="button") Категория
+                  .accordion__content(data-accordion="content")
+                    .accordion__wrapper
+                      fieldset.filters__fieldset
+                        legend.filters__legend.visually-hidden!= 'Выберите категорию из списка'
+                        select.filters__select
+                          option(value='', selected, disabled)!= 'Выберите из списка'
+                          option(value='Mpt')!= 'Mpt'
+                          option(value='Scrapers')!= 'Scrapers'
+                          option(value='Грузовые шины')!= 'Грузовые шины'
+                          option(value='Легкогрузовые шины')!= 'Легкогрузовые шины'
+                          option(value='Пневматические шины для складских вилочных погрузчиков')!= 'Пневматические шины для складских вилочных погрузчиков'
+                          option(value='Шины для экскаваторов-погрузчиков / телескопических погрузчиков')!= 'Шины для экскаваторов-погрузчиков / телескопических погрузчиков'
               button.btn.btn--reset(type="button") Сбросить фильтры
         .col-12.col-lg-9
           +tovar.tovar__line
