@@ -1,0 +1,208 @@
+.product {
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__box {
+    background-color: $color-gray;
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 1px 1px;
+    grid-template-areas:
+    "image title"
+    "image price"
+    "image offer"
+    "specification description";
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 1px;
+      grid-template-areas: "image" "title" "price" "offer" "specification" "description";
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin: auto 0;
+    }
+  }
+
+  &__image,
+  &__title,
+  &__price,
+  &__offer,
+  &__specification,
+  &__description {
+    background-color: $color-white;
+    display: flex;
+    padding: 30px 25px;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 20px 15px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-gray-two;
+    margin-bottom: 10px;
+  }
+
+  &__pay {
+    display: flex;
+    gap: 14px;
+
+    img {
+      flex-shrink: 0;
+      object-fit: contain;
+      width: 156px;
+    }
+
+    &-deck {
+      font-family: $font-gilroy;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      opacity: 0.5;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    justify-content: center;
+    align-items: center;
+
+    &-box {
+      width: 100%;
+      height: 350px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      @include mobile {
+        height: 250px;
+      }
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__cost {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: $color-orange;
+  }
+
+  &__article {
+    text-align: right;
+  }
+
+  &__statys {
+    display: flex;
+    align-items: center;
+
+    &--green {
+      &:before {
+        content: " ";
+        display: block;
+        margin-right: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        outline: 4px solid rgba($color-green, 0.2);
+        background-color: $color-green;
+      }
+    }
+  }
+
+  &__price {
+    grid-area: price;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .product__block {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+
+  &__offer {
+    grid-area: offer;
+    flex-direction: column;
+  }
+
+  &__specification {
+    grid-area: specification;
+    flex-direction: column;
+  }
+
+  &__description {
+    grid-area: description;
+    flex-direction: column;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__tr {
+    display: flex;
+  }
+
+  &__td {
+    flex: 0 0 auto;
+    width: 50%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 10px 0;
+    border-bottom: 1px dashed $color-gray;
+
+    &-title {
+      text-align: left;
+    }
+
+    &-description {
+      text-align: right;
+      opacity: 0.6;
+    }
+  }
+}
