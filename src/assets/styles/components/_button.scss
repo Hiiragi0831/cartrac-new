@@ -57,5 +57,10 @@
     background-repeat: no-repeat;
     background-size: auto 18px;
     background-position: left 33px center;
+
+    @include mobile {
+      background-position: left 15px center;
+      padding: 15px 15px 15px 40px;
+    }
   }
 }

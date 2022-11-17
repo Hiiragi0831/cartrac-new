@@ -28,4 +28,20 @@ window.addEventListener('DOMContentLoaded', () => {
   sliders.init();
   menu.init();
   initQty();
+
+  if (document.querySelectorAll('.tovar__sklad')) {
+    document.querySelectorAll('.tovar__sklad').forEach((item) => {
+      if (item.innerHTML === "") {
+        const div = document.createElement('div');
+
+        div.classList.add('product__statys');
+        div.classList.add('product__statys--red');
+
+        item.appendChild(div);
+      }
+    })
+  }
 });
+
+
+

@@ -26,6 +26,14 @@
   &__fieldset {
     max-width: 100%;
     width: 100%;
+    padding: 20px;
+    border-top: 1px solid #d0d0d0;
+
+    span {
+      margin-left: 5px;
+      font-size: 15px;
+      font-weight: 400;
+    }
   }
 
   &__select {
@@ -49,7 +57,6 @@
   .accordion__element {
     padding: 0;
     border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
 
     .accordion__button {
       position: relative;

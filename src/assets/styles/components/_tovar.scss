@@ -63,6 +63,22 @@
     margin-top: auto;
   }
 
+  &__sklad {
+    width: 66px;
+    display: flex;
+    justify-content: center;
+
+    .product__statys:before {
+      margin: 0;
+    }
+
+    @include mobile {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+    }
+  }
+
   &__line {
     flex-direction: row;
     align-items: center;

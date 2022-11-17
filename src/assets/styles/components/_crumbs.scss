@@ -32,4 +32,8 @@
       text-decoration: none;
     }
   }
+
+  @include mobile {
+    flex-direction: column;
+  }
 }

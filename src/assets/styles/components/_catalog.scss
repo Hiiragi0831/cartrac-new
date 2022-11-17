@@ -1,3 +1,44 @@
 .catalog {
+  &__thead {
+    background-color: $color-ace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 
+    &-image,
+    &-title,
+    &-price,
+    &-more,
+    &-sklad {
+      p {
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    &-image {
+      width: 60px;
+    }
+
+    &-sklad {
+      width: 66px;
+    }
+
+    &-title {
+      width: 263px;
+    }
+
+    &-price {
+      width: 135px;
+    }
+
+    &-more {
+      width: 188px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
 }

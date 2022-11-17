@@ -17,6 +17,10 @@ $border-num-radius: 2px;
     display: block;
     position: relative;
     width: 155px;
+
+    @include mobile {
+      width: 100px;
+    }
   }
 
   &__input {
@@ -28,6 +32,10 @@ $border-num-radius: 2px;
     appearance: none;
     border: 1px solid #d0d0d0;
     border-radius: 2px;
+
+    @include mobile {
+      width: 100px;
+    }
   }
 
   &__btn {
@@ -74,6 +82,10 @@ $border-num-radius: 2px;
       &:focus {
         background-color: transparent;
       }
+    }
+
+    @include mobile {
+      width: 30px;
     }
   }
 

@@ -1,7 +1,7 @@
 extends ../layouts/master.pug
 
 block title
-  title My Page - Contact
+  title My Page - Catalog
 
 block basicSeo
   meta(name='description' content='Contact page')
@@ -14,7 +14,7 @@ block manifestBrowserconfigFiles
 
 block content
 
-  //- Contact page
+  //- Catalog page
   section.page
     .container
       .row
@@ -70,6 +70,16 @@ block content
                           option(value='Шины для экскаваторов-погрузчиков / телескопических погрузчиков')!= 'Шины для экскаваторов-погрузчиков / телескопических погрузчиков'
               button.btn.btn--reset(type="button") Сбросить фильтры
         .col-12.col-lg-9
+          .catalog__thead
+            .catalog__thead-image
+              p Фото
+            .catalog__thead-sklad
+              p Наличие
+            .catalog__thead-title
+              p Название товара
+            .catalog__thead-price
+              p Цена
+            .catalog__thead-more
           +tovar.tovar__line
           +tovar.tovar__line
           +tovar.tovar__line
