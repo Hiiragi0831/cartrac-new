@@ -240,4 +240,22 @@
       opacity: 0.6;
     }
   }
+
+  &__more {
+    margin-top: 10px;
+    color: $color-orange;
+    cursor: pointer;
+
+    &:after {
+      flex-shrink: 0;
+      content: "";
+      display: inline-flex;
+      margin-left: 14px;
+      background-image: url("@~images/icons/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-size: 7px;
+      width: 7px;
+      height: 7px;
+    }
+  }
 }

@@ -12,6 +12,11 @@
   }
 }
 
+.is-hidden {
+  // stylelint-disable-next-line declaration-no-important
+  display: none !important;
+}
+
 @function vw($value, $base: 1920) {
   @return $value / $base * 100vw;
 }

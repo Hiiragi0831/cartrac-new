@@ -119,6 +119,14 @@
       font-weight: 400;
     }
 
+    #{$p}__button {
+      width: 176px;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
     @include mobile {
       gap: 15px;
       flex-wrap: wrap;
