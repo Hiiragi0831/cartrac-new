@@ -13,12 +13,26 @@
     border-color: $color-orange;
     outline-color: $color-orange;
 
+    &.active {
+      background-color: $color-dark;
+      border-color: $color-dark;
+      outline-color: $color-dark;
+    }
+
     :not(.btn-check) + &:hover,
     &:first-child:hover {
       outline-color: $color-dark;
       background-color: $color-dark;
       border-color: $color-dark;
     }
+
+
+  }
+
+  &-check:checked+.btn {
+    outline-color: $color-dark;
+    background-color: $color-dark;
+    border-color: $color-dark;
   }
 
   &-outline-primary {
@@ -61,6 +75,12 @@
     @include mobile {
       background-position: left 15px center;
       padding: 15px 15px 15px 40px;
+    }
+  }
+
+  &--info {
+    @include mobile {
+      padding: 15px;
     }
   }
 }

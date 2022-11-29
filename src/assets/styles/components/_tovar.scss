@@ -49,6 +49,7 @@
   }
 
   &__price {
+    margin-top: auto;
     margin-bottom: 15px;
     text-align: center;
 
@@ -59,21 +60,27 @@
     }
   }
 
-  &__button {
-    margin-top: auto;
-  }
+  &__button {}
 
   &__sklad {
     width: 66px;
     display: flex;
     justify-content: center;
 
-    .product__statys:before {
-      margin: 0;
+    .product__statys {
+      span {
+        margin-left: 8px;
+        font-size: 10px;
+      }
+
+      &:before {
+        margin: 0;
+      }
     }
 
     @include mobile {
       position: absolute;
+      width: auto;
       left: 15px;
       top: 15px;
     }
