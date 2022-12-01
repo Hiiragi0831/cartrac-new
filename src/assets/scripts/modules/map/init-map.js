@@ -22,9 +22,7 @@ const init = (map) => {
 };
 
 const breakpointChecker = () => {
-  let mapEl; // удалить после объявления переменной
-
-  // const mapEl = document.querySelector('');
+  let mapEl;
 
   if (!mapEl) {
     return;
@@ -78,25 +76,6 @@ const addMarkers = ({markers, mapInstance, collection, isBalloon}) => {
           //     .on('click', $.proxy(this.onCloseClick, this));
       },
 
-      // clear: function () {
-      //     this._$element.find('.close')
-      //         .off('click');
-
-      //     this.constructor.superclass.clear.call(this);
-      // },
-
-      // onSublayoutSizeChange: function () {
-      //     MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
-
-      //     if(!this._isElement(this._$element)) {
-      //         return;
-      //     }
-
-      //     this.applyElementOffset();
-
-      //     this.events.fire('shapechange');
-      // },
-
       applyElementOffset: function () {
 
         let topCoord = -this._$element.offsetHeight / 2;
@@ -134,11 +113,9 @@ const addMarkers = ({markers, mapInstance, collection, isBalloon}) => {
   const MyBalloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
     `<div class="map-balloon">
       <h3 class="map-balloon__title">$[properties.balloonTitle]</h3>
-
       <div class="factoid">
-        <div class="factoid__status">$[properties.balloonFactoidStatus]</div>
         <div class="factoid__title">$[properties.balloonFactoidTitle]</div>
-        <div class="factoid__value">$[properties.balloonFactoidValue]</div>
+        <div class="factoid__status">$[properties.balloonFactoidStatus]</div>
       </div>
     </div>`
   );
@@ -150,10 +127,12 @@ const addMarkers = ({markers, mapInstance, collection, isBalloon}) => {
       balloonTitle: marker.name,
       balloonFactoidTitle: marker.factoid.title,
       balloonFactoidValue: marker.factoid.value,
+
     } : (marker.factoid && !isMobile) ? {
       marker,
       // balloonContentBody: balloonLayout,
       balloonTitle: marker.name,
+      balloonFactoidTitle: marker.factoid.title,
       balloonFactoidStatus: marker.factoid.status,
     } : {
       marker,
@@ -241,14 +220,7 @@ const addMarkers = ({markers, mapInstance, collection, isBalloon}) => {
   });
 
   mapInstance.geoObjects.add(markerCollection);
-  mapInstance.setBounds(mapInstance.geoObjects.getBounds(), {
-    checkZoomRange: true,
-    zoomMargin: 10,
-  }).then(() => {
-    if (mapInstance.getZoom() > 10) {
-      mapInstance.setZoom(10);
-    }
-  });
+  mapInstance.setBounds(mapInstance.geoObjects.getBounds());
 
   return markerCollection;
 };
