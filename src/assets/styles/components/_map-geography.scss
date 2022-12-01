@@ -27,18 +27,35 @@
 }
 
 .map-balloon {
+  box-sizing: border-box;
   padding: 20px 35px;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
 
   &__title {
     font-weight: 500;
   }
 }
 
+.factoid {
+  box-sizing: inherit;
+  max-width: 100%;
+  width: 100%;
+
+  &__title {
+    box-sizing: inherit;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .popover {
+  box-sizing: border-box;
   width: max-content;
   height: auto;
   position: absolute;
+  max-width: 360px;
+  border: none;
 
   &::before {
     position: absolute;
