@@ -1,7 +1,7 @@
 /* src/assets/styles/components/_button.scss  */
 
 .btn {
-  border-radius: 90px;
+  border-radius: 10px;
   padding: 14px 50px;
 
   &-primary {
@@ -29,10 +29,16 @@
 
   }
 
-  &-check:checked+.btn {
+  &-check:checked+.btn-primary {
     outline-color: $color-dark;
     background-color: $color-dark;
     border-color: $color-dark;
+  }
+
+  &-check:checked+.btn-outline-primary {
+    outline-color: $color-orange;
+    background-color: $color-orange;
+    border-color: $color-orange;
   }
 
   &-outline-primary {
