@@ -165,20 +165,20 @@
       width: 8px;
       height: 8px;
       border-radius: 100%;
-      outline: 4px solid rgba($color-green, 0.2);
+      box-shadow: 0 0 0 4px rgba($color-green, 0.2);
       background-color: $color-green;
     }
 
     &--green {
       &:before {
-        outline: 4px solid rgba($color-green, 0.2);
+        box-shadow: 0 0 0 4px rgba($color-green, 0.2);
         background-color: $color-green;
       }
     }
 
     &--red {
       &:before {
-        outline: 4px solid rgba($color-orange-dark, 0.2);
+        box-shadow: 0 0 0 4px rgba($color-orange-dark, 0.2);
         background-color: $color-orange-dark;
       }
     }
